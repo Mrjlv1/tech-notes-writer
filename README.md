@@ -1,10 +1,10 @@
-# My Writing Notes 技能集
+# Tech Notes Writer 技能集
 
 > 两阶段自动化技术笔记写作技能：深度调研 + 智能配图 + Review 检查 + 提示词管理
 
 ## 📋 简介
 
-My Writing Notes 是一个完整的技能集，用于自动化生成高质量的技术学习笔记。它采用两阶段执行模式，确保内容质量和数据安全。
+Tech Notes Writer 是一个完整的技能集，用于自动化生成高质量的技术学习笔记。它采用两阶段执行模式，确保内容质量和数据安全。
 
 ### 核心特性
 
@@ -70,33 +70,27 @@ Phase 6: 创建备份
 ## 📦 技能集结构
 
 ```
-~/.qoder/skills/my-writing-notes/
-├── SKILL.md                              # 主技能（两阶段编排）
-├── README.md                             # 本文件
-├── QUICKSTART.md                         # 快速入门指南
-├── ARCHITECTURE.md                       # 架构设计文档
+tech-notes-writer/
+├── README.md                                 # 本文件
+├── QUICKSTART.md                             # 快速入门指南
+├── ARCHITECTURE.md                           # 架构设计文档
 │
-├── phase1-content-generation/            # 第一阶段：内容生成
-│   ├── SKILL.md                          # Phase 1-4 工作流
-│   ├── review-checklist.md               # Review 检查清单
-│   └── templates/                        # 内容模板
-│       ├── note-template.md              # 笔记模板
-│       └── prompt-template.md            # 提示词模板
-│
-├── phase2-content-cleanup/               # 第二阶段：内容净化
-│   ├── SKILL.md                          # Phase 5-6 工作流
-│   └── scripts/                          # 辅助脚本
-│       ├── extract-prompts.sh            # 提取提示词
-│       └── cleanup-prompts.sh            # 清理提示词
-│
-├── drawio-diagram/                       # 子技能：draw.io 图表
-│   ├── SKILL.md                          # draw.io 规范
-│   └── EXAMPLES.md                       # 使用示例
-│
-└── image-prompt-manager/                 # 子技能：提示词管理
-    ├── SKILL.md                          # 提示词生成和备份
-    ├── templates/                        # 提示词模板
-    └── examples.md                       # 使用示例
+└── skills/
+    ├── SKILL.md                              # 主技能（两阶段编排）
+    │
+    ├── phase1-content-generation/            # 第一阶段：内容生成
+    │   ├── SKILL.md                          # Phase 1-4 工作流
+    │   └── review-checklist.md               # Review 检查清单
+    │
+    ├── phase2-content-cleanup/               # 第二阶段：内容净化
+    │   └── SKILL.md                          # Phase 5-6 工作流
+    │
+    ├── drawio-diagram/                       # 子技能：draw.io 图表
+    │   ├── SKILL.md                          # draw.io 规范
+    │   └── EXAMPLES.md                       # 使用示例
+    │
+    └── image-prompt-manager/                 # 子技能：提示词管理
+        └── SKILL.md                          # 提示词生成和备份
 ```
 
 ---
@@ -321,9 +315,7 @@ related:
 
 | 版本 | 日期 | 核心功能 |
 |------|------|---------|
-| v3.0.0 | 2026-05-14 | deep-research + draw.io + Mermaid |
-| v4.0.0 | 2026-05-14 | + AI 图像提示词 + Human-in-Loop |
-| **v5.0.0** | **2026-05-14** | **+ 两阶段执行 + Review 检查 + 提示词备份** |
+| **v1.0.0** | **2026-05-14** | **deep-research + draw.io + Mermaid + AI 图像提示词 + Human-in-Loop + 两阶段执行 + Review 检查 + 提示词备份** |
 
 ---
 
@@ -334,7 +326,7 @@ related:
 未来可开发为 Obsidian Plugin：
 
 ```
-my-writing-notes-plugin/
+tech-notes-writer-plugin/
 ├── src/
 │   ├── phase1/                     # 第一阶段模块
 │   │   ├── research.ts             # deep-research
@@ -374,12 +366,12 @@ my-writing-notes-plugin/
 |------|------|------|
 | **快速入门** | [QUICKSTART.md](QUICKSTART.md) | 5 分钟快速开始 |
 | **架构设计** | [ARCHITECTURE.md](ARCHITECTURE.md) | 技能集架构和 Plugin 预留 |
-| **主技能** | [SKILL.md](SKILL.md) | 两阶段工作流编排 |
-| **第一阶段** | [phase1-content-generation/SKILL.md](phase1-content-generation/SKILL.md) | 内容生成全流程 |
-| **第二阶段** | [phase2-content-cleanup/SKILL.md](phase2-content-cleanup/SKILL.md) | 内容净化全流程 |
-| **Review 清单** | [phase1-content-generation/review-checklist.md](phase1-content-generation/review-checklist.md) | Review 检查项 |
-| **draw.io 规范** | [drawio-diagram/SKILL.md](drawio-diagram/SKILL.md) | 架构图生成规范 |
-| **提示词管理** | [image-prompt-manager/SKILL.md](image-prompt-manager/SKILL.md) | 提示词生成和备份 |
+| **主技能** | [skills/SKILL.md](skills/SKILL.md) | 两阶段工作流编排 |
+| **第一阶段** | [skills/phase1-content-generation/SKILL.md](skills/phase1-content-generation/SKILL.md) | 内容生成全流程 |
+| **第二阶段** | [skills/phase2-content-cleanup/SKILL.md](skills/phase2-content-cleanup/SKILL.md) | 内容净化全流程 |
+| **Review 清单** | [skills/phase1-content-generation/review-checklist.md](skills/phase1-content-generation/review-checklist.md) | Review 检查项 |
+| **draw.io 规范** | [skills/drawio-diagram/SKILL.md](skills/drawio-diagram/SKILL.md) | 架构图生成规范 |
+| **提示词管理** | [skills/image-prompt-manager/SKILL.md](skills/image-prompt-manager/SKILL.md) | 提示词生成和备份 |
 
 ---
 
@@ -426,5 +418,5 @@ my-writing-notes-plugin/
 ---
 
 **最后更新**：2026-05-14  
-**技能集版本**：5.0.0  
+**技能集版本**：v1.0.0  
 **许可证**：MIT

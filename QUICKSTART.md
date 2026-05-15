@@ -1,4 +1,4 @@
-# My Writing Notes 快速入门指南
+# Tech Notes Writer 快速入门指南
 
 ## 🚀 5 分钟快速开始
 
@@ -253,11 +253,11 @@ resources/images/sentinel-deep-dive/
 ## 📚 参考文档
 
 - **架构文档**：[ARCHITECTURE.md](ARCHITECTURE.md)
-- **主技能**：[SKILL.md](SKILL.md)
-- **第一阶段**：[phase1-content-generation/SKILL.md](phase1-content-generation/SKILL.md)
-- **第二阶段**：[phase2-content-cleanup/SKILL.md](phase2-content-cleanup/SKILL.md)
-- **draw.io 规范**：[drawio-diagram/SKILL.md](drawio-diagram/SKILL.md)
-- **提示词管理**：[image-prompt-manager/SKILL.md](image-prompt-manager/SKILL.md)
+- **主技能**：[skills/SKILL.md](skills/SKILL.md)
+- **第一阶段**：[skills/phase1-content-generation/SKILL.md](skills/phase1-content-generation/SKILL.md)
+- **第二阶段**：[skills/phase2-content-cleanup/SKILL.md](skills/phase2-content-cleanup/SKILL.md)
+- **draw.io 规范**：[skills/drawio-diagram/SKILL.md](skills/drawio-diagram/SKILL.md)
+- **提示词管理**：[skills/image-prompt-manager/SKILL.md](skills/image-prompt-manager/SKILL.md)
 
 ---
 
@@ -325,4 +325,4 @@ resources/images/{文档名}/{文档名}-image-prompts.md
 ---
 
 **最后更新**：2026-05-14  
-**技能集版本**：5.0.0
+**技能集版本**：v1.0.0
